@@ -9,16 +9,18 @@ arg1 = round(arg1, 2)
 arg2 = input("Enter Your Second Argument: ")
 arg2 = float(arg2)
 arg2 = round(arg2, 2)
-if operation == 1:
-    print("Addition: " ,str(arg1), "+", str(arg2) ,"=" ,arg1+arg2 )
-elif operation == 2:
-    print("Substraction: ",str(arg1), "-", str(arg2) ,"=" ,arg1-arg2)
-elif operation == 3:
-    print("Multiplication: " ,str(arg1), "*", str(arg2) ,"=" ,arg1*arg2)
-elif operation == 4:
-    try:
-        print("Divition: " ,str(arg1), "/", str(arg2) ,"=" ,arg1/arg2)
-    except ZeroDivisionError as e:
-        print("Error: Cannot divide by zero")
-elif operation == 5:
-    print("Modulous: ",str(arg1), "%", str(arg2) ,"=" ,arg1%arg2)
+def simple_calc():
+    if operation == 1:
+        print("Addition: " ,str(arg1), "+", str(arg2) ,"=" ,arg1+arg2 )
+    elif operation == 2:
+        print("Substraction: ",str(arg1), "-", str(arg2) ,"=" ,arg1-arg2)
+    elif operation == 3:
+        print("Multiplication: " ,str(arg1), "*", str(arg2) ,"=" ,arg1*arg2)
+    elif operation == 4:
+        try:
+            print("Divition: " ,str(arg1), "/", str(arg2) ,"=" ,arg1/arg2)
+        except ZeroDivisionError as e:
+            print("Error: Cannot divide by zero")
+    elif operation == 5:
+        print("Modulous: ",str(arg1), "%", str(arg2) ,"=" ,arg1%arg2)
+simple_calc()
