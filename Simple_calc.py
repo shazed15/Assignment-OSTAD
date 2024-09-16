@@ -23,4 +23,6 @@ def simple_calc():
             print("Error: Cannot divide by zero")
     elif operation == 5:
         print("Modulous: ",str(arg1), "%", str(arg2) ,"=" ,arg1%arg2)
+    else:
+        print("Your pressing number not is in the choice list. ")
 simple_calc()
