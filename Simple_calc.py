@@ -24,5 +24,5 @@ def simple_calc():
     elif operation == 5:
         print("Modulous: ",str(arg1), "%", str(arg2) ,"=" ,arg1%arg2)
     else:
-        print("Your pressing number not is in the choice list. ")
+        print("Your pressing number not is in the choice list. Please choose(1/2/3/4/5) for your operation.")
 simple_calc()
