@@ -1,7 +1,7 @@
 import random
 lower_bound = 1
 upper_bound = 1000
-max_attempts = 10
+max_attempts = 100
 secret_number = random.randint(lower_bound, upper_bound)
 
 def get_guess():
